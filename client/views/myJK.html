@@ -2,15 +2,12 @@
 <html>
   <head>
   	<title>Jukebox</title>
-
-    <link rel="stylesheet" href="/stylesheets/jk.css" media="screen">
-
-    <!--<link rel="stylesheet" type="text/css" href="css/main.css"> -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/jk.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   	<script src="javascripts/juke.js"></script>
   </head>
 <body>
-
+<!-- audio-id for controls-->
 <audio id="audio-id"></audio>
 
 <div id="main-div"><br>
@@ -26,11 +23,6 @@
         <input id="url" class="input" type="text" placeholder="url"><br><br>
         <button id="add_song" type="submit">Submit</button>
             <hr/>
-            <input id="addSong" value="Input song URL"></input>
-            <button id="submitBtn" onclick="juke.addSong()">Add Song</button>
-
-                <button id="spotifyBtn" onclick="juke.spotiSong()">Add Spotify Sample</button>
-                <br><hr/>
       </div>
     </div>
 <!-- audio  buttons -->

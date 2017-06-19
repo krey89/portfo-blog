@@ -1,15 +1,5 @@
-$(document).ready(function() {
-  //GET https: accounts.spotify.com/authorize
+$(document).ready(function(){
 
-// curl -X GET "https://api.spotify.com/v1/tracks/3n3Ppam7vgaVa1iaRUc9Lp" -H "Accept: application/json" -H "Authorization: Bearer BQC8__O9CxNQEiEXDH9buAqkYXMOef-_CcR3Lg07PpdrPfbVQMH94Lww0XnbBIh4OjWWm-jLRC0RLCMCSL4Eyqwktq1RNygmtAZVFE3TvbSmzfjYT8GR9uUDDluWyM78E7Edbmf7K2KS68Y4AG6CIxKEturt99A"
-
-	$.ajax({
-    type: "GET",
-    url: "https://api.spotify.com/v1/tracks/"
-    success: function() {
-      console.log(response.result);
-    }
-  });
 var target = document.getElementById('audio-id');
 
 // Jukebox object
@@ -57,22 +47,7 @@ function Jukebox() {
 		}
 		juke.play()
 	}
-
-	this.addSong = function() {
-		path = $("#addSong").val();
-		this.playlist.push(path);
-	}
-
-
-
-
-
-
 }
-
-
-
-
 function Music(title, artist, url){
 	this.title = title;
 	this.artist = artist;

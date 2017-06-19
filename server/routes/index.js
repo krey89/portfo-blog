@@ -2,7 +2,9 @@ const express = require('express');
 const router = express.Router();
 const pg = require('pg');
 const path = require('path');
-const connectionString = process.env.DATABASE_URL || 'postgres://localhost:5432/blog';
+// const connectionString = process.env.DATABASE_URL || 'postgres://localhost:5432/blog';
+const connectionString = process.env.DATABASE_URL || 'postgres://azpjovwjgkiuvg:81dcaf0c4f5f361342d4b23f4d29eafecc78f0d90efab8844ca1fad94de4e31a@ec2-50-19-219-69.compute-1.amazonaws.com:5432/d9tu4fukqlhuqf';
+
 
 router.get('/juke', (req, res, next) => {
   res.sendFile(path.join(

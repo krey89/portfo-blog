@@ -2,8 +2,8 @@ const express = require('express');
 const router = express.Router();
 const pg = require('pg');
 const path = require('path');
-const connectionString = process.env.DATABASE_URL || 'postgres://localhost:5432/blog';
-//const connectionString = process.env.DATABASE_URL || 'postgres://azpjovwjgkiuvg:81dcaf0c4f5f361342d4b23f4d29eafecc78f0d90efab8844ca1fad94de4e31a@ec2-50-19-219-69.compute-1.amazonaws.com:5432/d9tu4fukqlhuqf';
+//const connectionString = process.env.DATABASE_URL || 'postgres://localhost:5432/blog';
+const connectionString = process.env.DATABASE_URL || 'postgres://csrozilvqvtqes:17692bd1f566f6417369936618de94bc22a95dcd23e15d6075ebf2f44b07bff6@ec2-54-163-254-48.compute-1.amazonaws.com:5432/def4a3ef6gurv8;'
 
 
 router.get('/juke', (req, res, next) => {
